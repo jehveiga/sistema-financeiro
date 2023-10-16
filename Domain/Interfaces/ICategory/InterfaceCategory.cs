@@ -1,6 +1,6 @@
 ﻿namespace Domain.Interfaces.ICategoria
 {
-    public interface InterfaceCategoria
+    public interface InterfaceCategory
     {
     }
 }

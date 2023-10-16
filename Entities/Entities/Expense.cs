@@ -3,13 +3,13 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Entities.Entities
 {
-    [Table("Despesa")]
-    public class Despesa : Base
+    [Table("Expense")]
+    public class Expense : Base
     {
         public decimal Valor { get; set; }
         public int Mes { get; set; }
         public int Ano { get; set; }
-        public EnumTipoDespesa TipoDespesa { get; set; }
+        public EnumTypeExpense TipoDespesa { get; set; }
         public DateTime DataCadastro { get; set; }
         public DateTime DataAlteracao { get; set; }
         public DateTime DataPagamento { get; set; }
@@ -17,11 +17,11 @@ namespace Entities.Entities
         public bool Pago { get; set; }
         public bool DespesaAtrasada { get; set; }
 
-        [ForeignKey("Categoria")]
+        [ForeignKey("Category")]
         [Column(Order = 1)]
         public int CategoriaId { get; set; }
 
         // EF Relation
-        public Categoria Categoria { get; set; }
+        public Category Category { get; set; }
     }
 }

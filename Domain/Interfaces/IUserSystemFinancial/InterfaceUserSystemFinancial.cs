@@ -1,6 +1,6 @@
 ﻿namespace Domain.Interfaces.IUsuarioSistemaFinanceiro
 {
-    public interface InterfaceUsuarioSistemaFinanceiro
+    public interface InterfaceUserSystemFinancial
     {
     }
 }

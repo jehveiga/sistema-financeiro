@@ -2,8 +2,8 @@
 
 namespace Entities.Entities
 {
-    [Table("SistemaFinanceiro")]
-    public class SistemaFinanceiro : Base
+    [Table("SystemFinancial")]
+    public class SystemFinancial : Base
     {
         public int Mes { get; set; }
         public int Ano { get; set; }

@@ -2,13 +2,13 @@
 
 namespace Entities.Entities
 {
-    [Table("Categoria")]
-    public class Categoria : Base
+    [Table("Category")]
+    public class Category : Base
     {
-        [ForeignKey("SistemaFinanceiro")]
+        [ForeignKey("SystemFinancial")]
         [Column(Order = 1)]
         public int SistemaId { get; set; }
         // EF Relation
-        public virtual SistemaFinanceiro SistemaFinanceiro { get; set; }
+        public virtual SystemFinancial SystemFinancial { get; set; }
     }
 }

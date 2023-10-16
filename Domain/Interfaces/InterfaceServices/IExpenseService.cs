@@ -1,6 +1,6 @@
 ﻿namespace Domain.Interfaces.InterfaceServices
 {
-    public interface IDespesaServico
+    public interface IExpenseService
     {
     }
 }

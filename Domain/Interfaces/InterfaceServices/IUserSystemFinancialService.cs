@@ -1,6 +1,6 @@
 ﻿namespace Domain.Interfaces.InterfaceServices
 {
-    public interface IUsuarioSistemaFinanceiroServico
+    public interface IUserSystemFinancialService
     {
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Entities.Enums
 {
-    public enum EnumTipoDespesa
+    public enum EnumTypeExpense
     {
         Contas = 1,
         Investimento
