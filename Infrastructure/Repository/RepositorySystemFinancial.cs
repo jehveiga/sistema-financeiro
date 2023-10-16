@@ -10,5 +10,10 @@ namespace Infrastructure.Repository
         public RepositorySystemFinancial(ContextBase context) : base(context)
         {
         }
+
+        public Task<IList<SystemFinancial>> ListarSistemasUsuario(string emailUsuario)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

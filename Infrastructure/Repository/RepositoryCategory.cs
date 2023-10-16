@@ -10,5 +10,10 @@ namespace Infrastructure.Repository
         public RepositoryCategory(ContextBase context) : base(context)
         {
         }
+
+        public Task<IList<Category>> ListarCategoriasUsuario(string emailUsuario)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -5,5 +5,6 @@ namespace Domain.Interfaces.ICategoria
 {
     public interface InterfaceCategory : InterfaceGeneric<Category>
     {
+        Task<IList<Category>> ListarCategoriasUsuario(string emailUsuario);
     }
 }

@@ -10,5 +10,20 @@ namespace Infrastructure.Repository
         public RepositoryUserSystemFinancial(ContextBase context) : base(context)
         {
         }
+
+        public Task<IList<UserSystemFinancial>> ListarUsuarioSistema(int idSistema)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<UserSystemFinancial> ObterUsuarioPorEmail(string emailUsuario)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task RemoverUsuarios(List<UserSystemFinancial> usuarios)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

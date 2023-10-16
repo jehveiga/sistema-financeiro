@@ -10,5 +10,15 @@ namespace Infrastructure.Repository
         public RepositoryExpense(ContextBase context) : base(context)
         {
         }
+
+        public Task<IList<Expense>> ListarDespesasUsuario(string emailUsuario)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<IList<Expense>> ListarDespesasUsuarioNaoPagasMesesAnterior(string emailUsuario)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
