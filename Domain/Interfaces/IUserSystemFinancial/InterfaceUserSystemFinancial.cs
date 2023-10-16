@@ -1,6 +1,9 @@
-﻿namespace Domain.Interfaces.IUsuarioSistemaFinanceiro
+﻿using Domain.Interfaces.Generics;
+using Entities.Entities;
+
+namespace Domain.Interfaces.IUsuarioSistemaFinanceiro
 {
-    public interface InterfaceUserSystemFinancial
+    public interface InterfaceUserSystemFinancial : InterfaceGeneric<UserSystemFinancial>
     {
     }
 }

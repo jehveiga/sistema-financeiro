@@ -1,6 +1,9 @@
-﻿namespace Domain.Interfaces.IDespesa
+﻿using Domain.Interfaces.Generics;
+using Entities.Entities;
+
+namespace Domain.Interfaces.IDespesa
 {
-    public interface Interfaceexpense
+    public interface InterfaceExpense : InterfaceGeneric<Expense>
     {
     }
 }

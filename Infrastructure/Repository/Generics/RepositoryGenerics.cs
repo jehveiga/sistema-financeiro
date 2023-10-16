@@ -17,25 +17,25 @@ namespace Infrastructure.Repository.Generics
             DbSet = context.Set<T>();
         }
 
-        public async Task<T> GetEntityById(int id) => await DbSet.FindAsync(id);
+        public virtual async Task<T> GetEntityById(int id) => await DbSet.FindAsync(id);
 
-        public async Task<IList<T>> List() => await DbSet.AsNoTracking().ToListAsync();
+        public virtual async Task<IList<T>> List() => await DbSet.AsNoTracking().ToListAsync();
 
         public IEnumerable<T> Search(Func<T, bool> predicate) => DbSet.AsNoTracking().Where(predicate).ToList();
 
-        public async Task Add(T entity)
+        public virtual async Task Add(T entity)
         {
             await DbSet.AddAsync(entity);
             await Db.SaveChangesAsync();
         }
 
-        public async Task Delete(T entity)
+        public virtual async Task Delete(T entity)
         {
             DbSet.Remove(entity);
             await Db.SaveChangesAsync();
         }
 
-        public async Task Update(T entity)
+        public virtual async Task Update(T entity)
         {
             DbSet.Update(entity);
             await Db.SaveChangesAsync();
